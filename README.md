@@ -13,7 +13,7 @@ Octo is a simple wrapper of GitHub API like hub but gives some features which hu
 
 ## Usage
 
-Currently, **Octo** supports the features:
+Currently, Octo supports the features:
 
 - Creating a repository
 
@@ -41,17 +41,17 @@ Flags:
   -p, --private                     Whether the repository is private or not
 ```
 
-### Reference
+## Reference
 
-#### Merge option
+### Merge option
 
 - [About pull request merges - GitHub Help](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges)
 
-#### .gitignore template
+### .gitignore template
 
 - [github/gitignore](https://github.com/github/gitignore)
 
-#### License template
+### License template
 
 - [Licensing a repository - GitHub Help](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository#searching-github-by-license-type)
 
