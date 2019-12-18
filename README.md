@@ -5,7 +5,7 @@
 [github/hub](https://github.com/github/hub) is a cool tool.
 But the tool doesn't have some features like allowing squash merge when creating a repository.
 
-**Octo** is a simple wrapper of GitHub API like **hub** but gives some features which **hub** doesn't. 
+Octo is a simple wrapper of GitHub API like hub but gives some features which hub doesn't. 
 
 ## Environment variables
 
@@ -18,7 +18,7 @@ Currently, **Octo** supports the features:
 - Creating a repository
 
 ```
-$ octo repo create --help                                                         Usage:
+$ octo repo create --help
 Usage:
   octo repo create [flags]
 
