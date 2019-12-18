@@ -37,8 +37,7 @@ func newRepoCreateCmd() *cobra.Command {
 		Use:     "create",
 		Aliases: []string{"c"},
 		Example: `octo create <org>/<repo> --license-template apache-2.0 --allow-squash
-octo create <repo> --auto-init --gitignore-template go --allow-squash
-`,
+octo create <repo> --auto-init --gitignore-template go --allow-squash`,
 		RunE: func(_ *cobra.Command, args []string) error {
 			if len(args) != 1 {
 				return errors.New("invalid arguments")

@@ -10,10 +10,7 @@ func NewCommand() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "octo",
 		Short:   "Yet another CLI that makes easier to use with GitHub",
-		Example: `octo create micnncim octo --license-template apache-2.0 --allow-squash`,
-		RunE: func(c *cobra.Command, args []string) error {
-			return nil
-		},
+		Example: `octo repo create octo --license-template apache-2.0 --allow-squash`,
 	}
 	cmd.AddCommand(repo.NewRepoCmd())
 	return cmd
