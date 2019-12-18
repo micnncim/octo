@@ -1,0 +1,18 @@
+name: Test
+on: [push]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+        id: go
+      - uses: actions/checkout@v2
+      - name: Cache Go modules
+        uses: actions/cache@v1
+        with:
+          path: ~/go/pkg/mod/cache
+          key: ${{ runner.os }}-${{ hashFiles('**/go.sum') }}
+      - run: go test ./...
